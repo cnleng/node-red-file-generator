@@ -1,0 +1,27 @@
+{
+  "name": "node-red-file-generator",
+  "version": "1.0.0",
+  "description": "Take some data as input and output to rotating files",
+  "main": "node-red-file-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnleng/node-red-file-generator.git"
+  },
+  "author": "Cyril Nleng (cyril.nleng@dell.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnleng/node-red-file-generator/issues"
+  },
+  "homepage": "https://github.com/cnleng/node-red-file-generator#readme",
+  "node-red" : {
+        "nodes": {
+            "node-red-file-generator": "node-red-file-generator.js"
+        }
+  },
+  "dependencies": {
+    "rotating-file-stream": "^1.3.7"
+  }
+}

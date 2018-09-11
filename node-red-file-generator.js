@@ -1,11 +1,5 @@
 module.exports = function(RED) {
     var rfs = require('rotating-file-stream');
-    var stream = rfs('sensor-data.log', {
-        path: '/opt/node-red/ksi',
-        size:     '1M', // rotate every 10 MegaBytes written
-        interval: '2s'  // rotate daily
-        //rotationTime: 'true'
-    });
     function NodeRedFileGenerator(config) {
         RED.nodes.createNode(this,config);
         var node = this;
